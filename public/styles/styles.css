@@ -1,0 +1,1086 @@
+body,html{
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    font-family: Arial;
+}
+#pageContainer{
+    position: relative;
+    min-height: 100%;
+}
+#content{
+    padding-bottom: 18.5rem;
+}
+.morePadding{
+    padding-bottom: 30rem !important;
+}
+/* ?------------- */
+/* ?Nav Styles */
+/* ?------------- */
+#topNav{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #2cb978;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+#topNav ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#topNav li{
+    width: 100%;
+    display: inline;
+    line-height: 40px;
+}
+.tNavLinks{
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: 300ms;
+}
+#topNav li .tNavLinks:hover{
+    font-size: 1.2rem;
+    background-color: #E5E8CA;
+}
+#selectedPage{
+    font-size: 1.2rem;
+    background-color: #E5E8CA;
+}
+/* *-------------------------------------------- */
+/* * This is the Products Filters style area */
+/* *-------------------------------------------- */
+#sideFilters{
+    background-color: #E5E8CA;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+#sideFilters h2{
+    border-bottom: 1px solid #2cb978;
+    font-weight: 300;
+}
+
+#filters label{
+    display: block;
+    transition: 300ms;
+}
+#filters input{
+    display: inline;
+    transition: 300ms;
+}
+#filters label:hover{
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+#filters button{
+    display: block;
+    margin-top: 10px;
+}
+#fromNum, #toNum{
+    width: 100px;
+}
+.ioniconDown{
+    display: block;
+}
+.filterArrows, .filterEmpArrows{
+    margin: 0 auto;
+    width: 35px;
+    transition: 300ms;
+}
+.filterArrows:hover{
+    cursor: pointer;
+    color: #2cb978;
+    width: 40px;
+}
+.ioniconDown:hover{
+    padding-top: 50px;
+}
+.ioniconUp{
+    margin-top: 50px;
+    display: none;
+}
+.ioniconUp:hover{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+#filterOpt{
+    grid-column: 1/4;
+    text-align: center;
+}
+#cattInputs, #manuInputs, #priceInputs{
+    display: none;
+    opacity: 1;
+}
+#filterOpt h3{
+    display: inline;
+}
+.filterShow{
+    display:block !important;
+}
+.sideButton{
+    height: 30px;
+    width: 150px;
+    border: none;
+    background-color: #2cb978;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: 500ms;
+    font-size: 1rem;
+}
+/* ?----------------------------------- */
+/* ? This is the Products style area */
+/* ?----------------------------------- */
+#productSection{
+    margin-top: 50px;
+}
+#pSearchForm{
+    text-align: center;
+    margin: 20px 0;
+}
+#pSearchForm label{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+#searchP{
+    text-indent: 10px;
+    font-size: 0.8rem;
+    width: 500px;
+    height: 40px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: ease-in 200ms;
+}
+#searchP:focus{
+    border: 3px solid #2cb978;
+}
+.bGStyle{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #2cb978;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: 500ms;
+    font-size: 1rem;
+}
+.bGStyle:hover, .sideButton:hover{
+    cursor: pointer;
+    background-color: #72d852;
+}
+#productsInfo{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.productCards{
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    transition: 700ms;
+}
+.productCards li{
+    list-style: none;
+}
+.productCards p, .productCards h3{
+    margin: 15px;
+}
+#productSpace{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+    margin: 30px 30px;
+}
+#productSpace img{
+    width: 310px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    opacity: 1;
+}
+.infoHid{
+    display: none;
+}
+.productCards:hover .infoHid{
+    display: block !important;
+    line-height: 25px;
+    height: 280px;
+}
+.productCards:hover{
+    background-color: #E5E8CA;
+}
+
+.productCards:Hover  img{
+    opacity: 0;
+    display: none !important;
+}
+.inStock{
+    color: #1d7506 !important;
+}
+.noStock{
+    color: #dd2a2a;
+}
+
+/* ?-------------------------------------- */
+/* ? This is the Min footer style area */
+/* ?-------------------------------------- */
+#minFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 18.5rem;
+    background-color: #2cb978;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+#minFooter #container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    text-align: center;
+}
+#minFooter h3{
+    color: #111010;
+}
+#minFooter hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(30, 97, 41, 0.75), rgba(0, 0, 0, 0));
+}
+#otherPages a:hover{
+    background-color: #f5f5f5;
+    padding: 5px;
+    transition: all 300ms;
+    border-radius: 5px;
+    color: #1c6d59;
+    font-size: 1.1rem;
+}
+#otherPages{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#otherPages li{
+    margin-top: 15px;
+}
+#otherPages a{
+    transition: ease-in 300ms;
+    text-decoration: none;
+    color: #000000;
+}
+footer p{
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+}
+.ionicon:hover{
+    transition: ease-in 200ms;
+    fill: #1c6d59;
+    color: #1c6d59;
+    background-color: #f5f5f5;
+    padding: 5px;
+    width: 40px;
+    border-radius: 50%;
+}
+footer p a{
+    transition: ease-in 200ms;
+    color: #000000;
+    text-decoration: none;
+}
+.socials{
+    transition: ease-in 200ms;
+    color: #000000;
+}
+.ionicon{
+    width: 35px;
+    transition: ease-in 200ms;
+}
+#backToTop{
+    text-align: center;
+    grid-column: 1/4;
+}
+#backToTop svg{
+    display: block;
+    margin: 0 auto;
+}
+/*  *------------------- */
+/*  *Dashboard styles */
+/*  *------------------- */
+#landingArea{
+    height: 100vh;
+    background: url('/finalProject/images/landingBackground3.jpg');
+    background-color: #E5E8CA;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#landingArea h1{
+    font-size: 4rem;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 80px;
+}
+#landingArea header{
+    grid-column: 1/3;
+}
+.landingButtons{
+    height: 300px;
+    width: 80%;
+    background-color: #2cb978;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    transition: 200ms;
+}
+.landingButtons:hover{
+    background-color: #E5E8CA;
+    cursor: pointer;
+
+}
+.ioniconButton{
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+.landingButtons a{
+    color: #000000;
+    text-decoration: none;
+}
+.divide{
+    border: 0;
+    margin: 0;
+    height: 6px;
+    background-image: linear-gradient(to right, rgba(44, 185, 120, 0.2), rgba(44, 185, 120, 0.8), rgba(44, 185, 120, 0.2));
+    
+}
+#dashBoard{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+#dashBoard h1{
+    text-align: center;
+    font-size: 3rem;
+    background-color: #2cb978;
+    width: 60%;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+#dashInfo{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    row-gap: 50px;
+}
+#news{
+    grid-column: 3/5;
+    padding: 0;
+}
+.divHeaders{
+    background-color: #2cb978;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-indent: 10px;
+}
+#topProducts{
+    grid-column: 3/5;
+}
+#recentTrans{
+    grid-column: 1/3;
+}
+.yearInfo{
+    font-size: 1.2rem;
+}
+.tableStyles{
+    background-color: #f5f5f5;
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.rowStyles:nth-child(even){
+    background-color: #E5E8CA;
+}
+.rowStyles{
+    height: 30px;
+}
+.tableStyles tr:last-of-type td:first-of-type{
+    border-bottom-left-radius: 8px;
+}
+
+.tableStyles tr:last-of-type td:last-of-type{
+    border-bottom-right-radius: 8px;
+}
+.tableStyles table, .tableStyles th, .tableStyles td{
+    text-align: center;
+}
+.tableStyles th{
+    background-color: #E5E8CA;
+    height: 25px;
+    padding: 10px;
+}
+.tableStyles td{
+    padding: 10px;
+}
+.uniCardStyle{
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    width: 100%;
+}
+#ytd{
+    text-indent: 10px;
+}
+.ytdInfo{
+    font-size: 1.5rem;
+}
+.ytdYear{
+    background-color: #E5E8CA;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+}
+#commentArea{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#commentSec{
+    height: 100%;
+}
+.addComments{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+#commentInput, #commentButton{
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+#commentInput{
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 8px;
+    text-indent: 10px;
+    border: 2px solid #2cb978;
+}
+#commentInput:focus{
+    font-size: 1.2rem;
+    outline: none;
+}
+#commentButton{
+    background-color: #2cb978;
+    border-bottom-right-radius: 8px;
+    height: 100%;
+    border: none;
+}
+#commentButton:hover{
+    background-color: #72d852;
+    transition: 200ms;
+    cursor: pointer;
+}
+.comments{
+    line-height: 50px;
+    margin: 0;
+    padding-left: 12px;
+}
+.hourTime{
+    font-size: .7rem;
+}
+.userName{
+    font-weight: 600;
+}
+.commentsCont:nth-child(even){
+    background-color: #E5E8CA;
+}
+.deleteFrm{
+    height: 0;
+    transition: ease-in-out 200ms;
+}
+.commentsCont:hover .deleteFrm, .commentsCont:hover .deleteButton{
+    height: 30px;
+    display: block !important;
+}
+.deleteButton{
+    display: none;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: rgb(202, 96, 96);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.deleteButton:hover{
+    cursor: pointer;
+    transition: 300ms;
+    background-color: #f5f5f5;
+}
+.deletedComm{
+    font-size: 1rem;
+    margin-left: 20px;
+    color: #ffff;
+}
+#avgItemsTrans{
+    grid-column: 4/5;
+
+}
+#avgItemsTrans p, #avg p{
+    font-size: 2rem;
+    text-align: center;
+}
+#avgItemsTrans , #avg {
+    background-color: #E5E8CA;
+    width: 80%;
+    margin: 0 auto;
+}
+/* ? ---------------------------- */
+/* ? employees styles section */
+/* ? ---------------------------- */
+#empLandingSec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    background-color: #E5E8CA;
+}
+#empLandingSec header {
+    font-size: 3rem;
+    background-color: #2cb978;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#empInformation{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+#empLandingSec img, #createEmp img{
+    display: block;
+    width: 80%;
+}
+#topFilterSec{
+    margin-top: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-top: 5px;
+    background-color: #2cb978;
+    margin-bottom: 0;
+}
+#topFilterSec h2{
+    margin-bottom: 0;
+}
+#fullEmpInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 50px;
+    margin-bottom: 100px;
+    background-color: #E5E8CA;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.empCards{
+    margin: 20px 30px;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#searchEmp{
+    text-align: center;
+    margin: 0 auto;
+}
+.filterButtons{
+    border: none;
+    height: 35px;
+    width: 150px;
+    background-color: #E5E8CA;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.filterButtons:hover{
+    background-color: #2cb978;
+    cursor: pointer;
+}
+
+#filterLoca{
+    margin: 10px 0;
+}
+.chosen{
+    background-color: #2cb978;
+}
+#filterLoca button{
+    height: 30px;
+    border: none;
+    width: 100px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    background-color: #E5E8CA;
+    border-radius: 5px;
+}
+#filterLoca button:hover{
+    cursor: pointer;
+    background-color: #00B894;
+}
+#filterLoca button:focus{
+    outline:none
+}
+.hiddenInput{
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#createEmp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #E5E8CA;
+}
+#createEmpPic h2{
+    background-color: #2cb978;
+    font-size: 3rem;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#createEmp button{
+    height: 500px;
+    width: 50%;
+    background-color: #2cb978;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#createEmp button:hover{
+    cursor: pointer;
+    background-color: #00B894;
+    transition: 300ms;
+}
+#createEmp img{
+    padding: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.extraInfo{
+    list-style: none;
+}
+.extraInfo li{
+    margin-top: 10px;
+}
+.dataSubject{
+    color: #2cb978;
+    font-weight: 600;
+}
+.empCards h3{
+    margin-left: 30px;
+    border-bottom: 2px solid #2cb978;
+    padding-bottom: 15px;
+}
+.empIdLoc{
+    margin-left: 40px;
+}
+.editInfoLabel{
+    float: right;
+    line-height: 25px;
+    font-size: .9rem;
+}
+.editInfoLabel:hover .ioniconEdit, .ioniconEdit:hover{
+    color: #2cb978;
+    cursor: pointer;
+}
+.ioniconEdit{
+    width: 25px;
+    float: right;
+    margin-right: 10px;
+}
+.hiddenfrmCont{
+    display: none;
+}
+.filterFormsHidden{
+    display: none;
+}
+.showfrmCont{
+    display: block;
+}
+.hiddenfrmShow{
+    display: grid;
+    grid-template-columns: 70%;
+    text-align: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+.hiddenfrmShow button{
+    background-color: #2cb978;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+.hiddenfrmShow button:hover{
+    cursor: pointer;
+    background-color: #1c6d59;
+    transition: 300ms;
+}
+
+.updateForms{
+    height: 30px;
+    border: none;
+    background-color: #f5f5f5;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-indent: 10px;
+}
+.updateForms:focus{
+    outline: none;
+}
+.errSusText{
+    grid-column: 1/3;
+    text-align: center;
+}
+.errorBlock{
+    display: block;
+}
+.filterEmpArrows:hover{
+    padding-top: 40px;
+    color: #E5E8CA;
+    cursor: pointer;
+}
+.empDownArr{
+    display: block;
+}
+.empUpArr{
+    display: none;
+}
+/* * ------------------------------------ */
+/* * recruit employees styles section */
+/* * ------------------------------------ */
+#recruitHead{
+    font-size: 3.5rem;
+    text-align: center;
+    background-color: #2cb978;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+#frmSection{
+    padding-top: 150px;
+}
+#empForm{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#addedEmp{
+    text-align: center;
+    color: #2cb978;
+    margin: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+#frmContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#frmContainer h2{
+    margin-top: 0;
+}
+#generalInfo{
+    background-color: #2cb978;
+    padding: 50px;
+    border-top-left-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
+}
+#importantInfo{
+    background-color: #E5E8CA;
+    padding: 50px;
+    border-top-right-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+}
+#empForm button{
+    width: 100%;
+    border: none;
+    height: 35px;
+    background-color: #ffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+}
+#empForm button:hover{
+    cursor: pointer;
+    background-color: #00B894;
+    transition: 300ms;
+}
+.inputStyles{
+    display: block;
+    border: none;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-indent: 10px;
+}
+#generalInfo .inputStyles:focus{
+    outline: none;
+    border: 5px solid #00B894;
+    transition: ease-in-out 200ms;
+}
+#importantInfo .inputStyles:focus{
+    outline: none;
+    border: 5px solid #E5E8CA;
+    transition: ease-in-out 200ms;
+}
+.labelStyles{
+    padding: 10px 0;
+    display: block;
+    font-size: 1.3rem;
+}
+.error{
+    color: #b31313;
+}
+/* ! ------------------------- */
+/* ! Media queries section */
+/* ! ------------------------- */
+@media (min-width:2500px){
+    #landingArea h1{
+        font-size: 8rem;
+    }
+
+}
+@media (max-width:1447px){
+    #recruitHead{
+        font-size: 2.5rem;
+    }
+    #filters h2{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:1323px){
+    #dashInfo{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        row-gap: 30px;
+    }
+    #topProducts{
+        grid-column: 1/3;
+    }
+    #recentTrans{
+        grid-column: 1/3;
+    }
+    #news{
+        grid-column: 1/3;
+    }
+    #avg{
+        grid-column: 1/2;
+    }
+    #avgItemsTrans{
+        grid-column: 2/3;
+    }
+    #landingArea{
+        height: 100%;
+        grid-template-columns: 1fr;
+    }
+    #dashBoard h1{
+        font-size: 2rem;
+    }
+    .landingButtons{
+        margin-bottom: 50px;
+    }
+    #productButton{
+        grid-column: 1/3;
+    }
+}
+@media (max-width:1215px){
+    #productsInfo{
+        grid-template-columns: 1fr;
+    }
+    #filters{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #priceInputs{
+        grid-column: 1/4;
+    }
+    .bGStyle, .sideButton{
+        display: block;
+        margin: 0 auto;
+    }
+    .bGStyle{
+        width: 150px;
+    }
+    #searchP{
+        width: 250px;
+        margin: 10px 0;
+    }
+}
+@media (min-width: 1215px){
+    #filterOpt{
+        display: none;
+    }
+    #cattInputs, #manuInputs, #priceInputs{
+        display: block;
+    }
+}
+@media (max-width: 1096px){
+    #recruitHead{
+        font-size: 2rem;
+    }
+    #fullEmpInfo{
+        grid-template-columns: 1fr;
+    }
+    #empLandingSec{
+        grid-template-columns: 1fr;
+        padding-bottom: 100px;
+    }
+    #empLandingSec header{
+        font-size: 2rem;
+        margin-top: 100px;
+        border-radius: 0;
+    }
+    #createEmp{
+        grid-template-columns: 1fr;
+    }
+    #createEmpButton button{
+        height: 300px;
+        margin: 50px 0;
+        width: 70%;
+    }
+    #createEmpPic h2{
+        border-radius: 0;
+    }
+    
+    #createEmpPic{
+        grid-row: 1;
+    }
+    #createEmpPic img{
+        margin: 0 auto;
+    }  
+}
+@media (max-width: 905px){
+    #empForm{
+        width: 90%;
+    }
+    #frmContainer{
+        grid-template-columns: 1fr;
+    }
+    #generalInfo{
+        border-top-right-radius: 10px;
+    }
+    #importantInfo{
+        border-top-right-radius: 0;
+    }
+    #createEmpButton h2{
+        font-size: 2rem;
+    }
+    .inputStyles{
+        width: 90%;
+    }
+    .filterButtons{
+        width: 100px;
+        font-size: .6rem;
+    }
+}
+@media (max-width: 750px){
+    #dashInfo{
+        grid-template-columns: 1fr;
+    }
+    #topProducts{
+        grid-column: 1/2;
+    }
+    #recentTrans{
+        grid-column: 1/2;
+    }
+    #news{
+        grid-column: 1/2;
+    }
+    #avg{
+        grid-column: 1/2;
+    }
+    #avgItemsTrans{
+        grid-column: 1/2;
+    
+    }
+    #avgItemsTrans p, #avg p{
+        font-size: 1.5rem;
+    }
+    .tableStyles{
+        font-size: .6rem;
+    }
+}
+@media (min-width: 652px){
+    .empDownArr{
+        display: none;
+    }
+}
+@media (max-width: 652px){
+    #landingArea h1{
+        font-size: 3rem;
+        border-radius: 0;
+        background-color: rgba(255, 251, 251, 0.383);
+    }
+    .extraInfo{
+        padding-left: 20px;
+        margin: 10px;
+    }
+    .empIdLoc{
+        margin-left: 30px;
+    }
+    .filterButtons{
+        display: none;
+    }
+    .filterButtonsMobile{
+        display: block !important;
+        border-radius: 0;
+        width: 100%;
+        font-size: .8rem;
+        border-bottom: 1px solid #E5E8CA;
+        background-color: #2cb978;
+    }
+    .filterButtons:hover{
+        background-color: #E5E8CA;
+        transition: 300ms;
+    }
+    .hiddenInput{
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+    #filterLoca button{
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .editInfoLabel{
+        margin-top: 10px;
+    }
+    .editInfoLabel, .ioniconEdit {
+        display: block;
+        float: none;
+        
+    }
+}
